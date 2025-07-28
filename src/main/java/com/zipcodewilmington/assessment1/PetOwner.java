@@ -10,13 +10,14 @@ public class PetOwner {
      */
     public PetOwner(String name, Pet... pets) {
         this.name = name;
-        this.pets = pets;
+        this.Pets = pets;
     }
 
     /**
      * @param pet pet to be added to the composite collection of Pets
      */
     public void addPet(Pet pet) {
+        this.Pets.add(pet);
     }
 
     /**
@@ -70,13 +71,13 @@ public class PetOwner {
      * @return the name property of the Pet
      */
     public String getName() {
-        return null;
+        return name;
     }
 
     /**
      * @return array representation of animals owned by this PetOwner
      */
     public Pet[] getPets() {
-        return null;
+        return Pets;
     }
 }
